@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratos do Restaurante</title>
+</head>
+<body>
+    <h1>BEM VINDO A NOSSA REDE DE RESTRAURANTES</h1>
+    <h5>Localização: Bairro Floresta, Belo Horizonte, MG</h5>
+    <h2>Confira nosso cardápio disponível:</h2>
+    <ul>
+        <li><h3> Prato 1: Lasanha a Bolonhesa </h3></li>
+        <img src="https://www.anamariareceitas.com.br/wp-content/uploads/2022/10/Lasanha-a-bolonhesa.jpg" alt="Lasanha a Bolonhesa" width="300">
+        <figcaption>Deliciosa lasanha com molho e queijo gratinado.</figcaption>
+        <figcaption>Preço (R$): 25,00</figcaption>
+
+        <li><h3> Prato 2: Frango grelhado </h3></li>
+        <img src="https://st1.uvnimg.com/a6/6a/ed8ca091475d8bb5af9d0192e6a8/frango-grelhado-prato-0622-1400x800.jpg" alt="Frango grelhado" width="300">
+        <figcaption>Frango suculento grelhado com arroz, salada e ervas finas.</figcaption>
+        <figcaption>Preço (R$): 22,00</figcaption>
+
+        <p> 
+        <form action="/processar" method="post">
+            <label for="produtos">Escolha um dos produtos:</label>
+            <select id="itens" name="itens" required>
+                <option value="">-- Selecione um dos Produto --</option>
+                <option value="prato1">LASANHA A BOLONHESA</option>
+                <option value="prato2">FRANGO GRELHADO</option>
+            </select>
+        </form>
+        </p>
+
+        <p> <a href="sobremesas.html"> <button>Escolher sobremesas </a></button></p>
+</body>
+</html>
