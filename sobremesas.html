@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobremesas</title>
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="stylesobremesas.css">
 </head>
 <body>
-    <h1>BEM VINDO A NOSSA REDE DE RESTRAURANTES</h1>
+    <h1>BEM-VINDO À NOSSA REDE DE RESTAURANTES</h1>
     <h5>Localização: Bairro Floresta, Belo Horizonte, MG</h5>
     <h2>Confira nosso cardápio de sobremesas disponível:</h2>
+
     <ul>
-        <li><h3> Sobremesa 1: Pudim </h3></li>
+        <li><h3>Sobremesa 1: Pudim</h3></li>
         <img src="https://s2.glbimg.com/Nf-KP945kuUD7bW-n_gVKnwVRHc=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/po/rc/media/2015/09/18/20_25_50_851_pudim.jpg" alt="Pudim" width="300">
-        <figcaption>Delicioso Pudim caseiro com calda de caramelo.</figcaption>
+        <figcaption>Delicioso pudim caseiro com calda de caramelo.</figcaption>
         <figcaption>Preço (R$): 10,00</figcaption>
 
-        <li><h3> Sobremesa 2: Mousse de Chocolate </h3></li>
+        <li><h3>Sobremesa 2: Mousse de Chocolate</h3></li>
         <img src="https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?cs=srgb&dl=pexels-ella-olsson-3026810.jpg&fm=jpg" alt="Mousse de Chocolate" width="300">
         <figcaption>Mousse cremoso feito com chocolate meio amargo.</figcaption>
         <figcaption>Preço (R$): 12,00</figcaption>
 
-        <p> 
         <form action="/processar" method="post">
-            <label for="produtos">Escolha um dos produtos:</label>
+            <label for="itens">Escolha uma das sobremesas:</label>
             <select id="itens" name="itens" required>
-                <option value="">-- Selecione um dos Produto --</option>
-                <option value="prato1">PUDIM</option>
-                <option value="prato2">MOUSSE DE CHOCOLATE</option>
+                <option value="">-- Selecione uma Sobremesa --</option>
+                <option value="sobremesa1">PUDIM</option>
+                <option value="sobremesa2">MOUSSE DE CHOCOLATE</option>
             </select>
         </form>
-        </p>
 
         <p><button>Ir para pagamento</button></p>
+    </ul>
 </body>
 </html>
